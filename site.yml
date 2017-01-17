@@ -1,23 +1,19 @@
----
-# This playbook deploys the whole application stack in this site.
-
-- name: apply common configuration to all nodes
+--- 
+- 
   hosts: all
+  name: apply common configuration to all nodes
   remote_user: root
-
-  roles:
+  roles: 
     - common
-
-- name: configure and deploy the webservers and application code
+- 
   hosts: webservers
+  name: configure and deploy the webservers and application code
   remote_user: root
-
-  roles:
+  roles: 
     - web
-
-- name: deploy MySQL and configure the databases
+- 
   hosts: dbservers
+  name: deploy MySQL and configure the databases
   remote_user: root
-
-  roles:
+  roles: 
     - db
