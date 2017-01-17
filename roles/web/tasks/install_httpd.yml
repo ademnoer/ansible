@@ -2,9 +2,9 @@
 # These tasks install http and the php modules.
 
 - name: Install http and php etc
-  yum: name={{ item }} state=present
+  apt: name={{ item }} state=present
   with_items:
-   - httpd
+   - apache2
    - php
    - php-mysql
    - git
