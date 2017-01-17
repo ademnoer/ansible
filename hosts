@@ -1,5 +1,5 @@
-[webservers]
-web3
+[web]
+172.0.0.1
 
 [dbservers]
 web2
